@@ -1,7 +1,8 @@
 import numpy as np
 import torch
 import streamlit as st
-from swin_model import Swin_V2_B_Weights, swin_v2_b 
+from torchvision.models import swin_v2_b, Swin_V2_B_Weights
+
 from torchvision import transforms
 from PIL import Image
 import torch.nn as nn
