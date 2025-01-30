@@ -26,7 +26,7 @@ index_to_animal = {
 }
 
 # App Banner
-st.image("Cover.png", use_container_width=True)
+st.image("Cover.png")
 
 # Streamlit App Title
 st.markdown("""
@@ -50,7 +50,7 @@ st.markdown("""
     <style>
     @keyframes fadeColor {
         0% { background-color: #1e1e1e; }
-        100% { background-color: #bb86fc; }
+        100% { background-color:rgb(59, 38, 87); }
     }
     .card {
         background-color: #1e1e1e;
@@ -107,7 +107,7 @@ uploaded_image = st.file_uploader("📸 Upload an image for prediction", type=["
 if uploaded_image is not None:
     # Display the uploaded image
     image = Image.open(uploaded_image)
-    st.image(image, caption="🖼 Uploaded Image", use_container_width=True)
+    st.image(image, caption="🖼 Uploaded Image")
 
     # Transform the image
     preprocess = transforms.Compose([
