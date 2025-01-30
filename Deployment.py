@@ -26,7 +26,7 @@ index_to_animal = {
 }
 
 # App Banner
-st.image("Cover.png", use_column_width=True)
+st.image("Cover.png", use_container_width=True)
 
 # Streamlit App Title
 st.markdown("""
